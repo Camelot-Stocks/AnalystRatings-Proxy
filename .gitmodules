@@ -1,0 +1,18 @@
+[submodule "Robinhood-Graph"]
+	path = Robinhood-Graph
+	url = https://github.com/HRSF124-JANK/Robinhood-Graph.git
+[submodule "Robinhood-About"]
+	path = Robinhood-About
+	url = https://github.com/HRSF124-JANK/Robinhood-About.git
+[submodule "Robinhood-AnalystRatings"]
+	path = Robinhood-AnalystRatings
+	url = https://github.com/HRSF124-JANK/Robinhood-AnalystRatings.git
+[submodule "Robinhood-Earnings"]
+	path = Robinhood-Earnings
+	url = https://github.com/HRSF124-JANK/Robinhood-Earnings.git
+[submodule "Robinhood-News"]
+	path = Robinhood-News
+	url = https://github.com/HRSF124-JANK/Robinhood-News.git
+[submodule "Robinhood-TradeStock"]
+	path = Robinhood-TradeStock
+	url = https://github.com/HRSF124-JANK/Robinhood-TradeStock.git
