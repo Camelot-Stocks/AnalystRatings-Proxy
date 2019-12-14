@@ -16,3 +16,6 @@
 [submodule "Robinhood-TradeStock"]
 	path = Robinhood-TradeStock
 	url = https://github.com/HRSF124-JANK/Robinhood-TradeStock.git
+[submodule "proxy-server/Robinhood-NavBar"]
+	path = proxy-server/Robinhood-NavBar
+	url = https://github.com/HRSF124-JANK/Robinhood-NavBar.git
