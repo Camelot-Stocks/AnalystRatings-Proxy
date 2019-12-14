@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>JANK Robinhood</title>
-  </head>
-  <body id="body">
-    <div id="Graph"></div>
+
+<head>
+  <title>JANK Robinhood</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+  <div id="Navbar"></div>
+  <div id="body">
     <div id="Tradestock"></div>
+    <div id="Graph"></div>
     <div id="About"></div>
     <div id="News"></div>
     <div id="Ratings"></div>
     <div id="Earnings"></div>
     <div id="modal-root"></div>
+  </div>
 
-    
-     <script src="http://54.153.91.76/main.js"></script> 
-     <script src="http://34.214.68.82/bundle.js"></script>
-     <script src="http://54.67.103.66/bundle.js"></script>
-     <script src="http://54.153.72.27/main.js"></script>
-     <script src="http://54.193.67.89/bundle.js"></script>
-     <script src="http://13.52.245.200/main.js"></script>
-  </body>
+
+  <script src="https://robinhood-graph.s3-us-west-1.amazonaws.com/main.js"></script>
+  <script src="https://robinhood-navbar.s3-us-west-1.amazonaws.com/main.js"></script>
+  <script src="http://tradestock.s3-website-us-west-2.amazonaws.com/"></script>
+  <script src="https://robinhood-earnings.s3-us-west-1.amazonaws.com/bundle.js"></script>
+  <script src="https://jank-ratings-component.s3-us-west-1.amazonaws.com/main.js"></script>
+  <script src="https://robinhood-news.s3-us-west-1.amazonaws.com/bundle.js"></script>
+  <script src="https://jank-about-component.s3-us-west-1.amazonaws.com/main.js"></script>
+</body>
+
 </html>

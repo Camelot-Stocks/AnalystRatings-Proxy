@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3007;
+const port = 3000;
 const path = require('path');
 const cors = require('cors');
 
@@ -19,7 +19,7 @@ app.get('/ratings/getData', (req, res) => {
 
 app.get('/ratings/:photo', (req, res) => {
     res.redirect(`http://54.153.72.27${req.url}`)
-  })
+})
 
 
 app.get('/earnings/getData', (req, res) => {
@@ -38,35 +38,39 @@ app.get('/tradestock/api', (req, res) => {
 
 app.get('/questionMark.png', (req, res) => {
     res.redirect('http://34.214.68.82/questionMark.png')
-  })
+})
 
-  app.get('/exclamation.png', (req, res) => {
+app.get('/exclamation.png', (req, res) => {
     res.redirect('http://34.214.68.82/exclamation.png')
-  })
+})
 
-  app.get('/exclamation-button.png', (req, res) => {
+app.get('/exclamation-button.png', (req, res) => {
     res.redirect('http://34.214.68.82/exclamation-button.png')
-  })
+})
 
-  app.get('/arrows.png', (req, res) => {
+app.get('/arrows.png', (req, res) => {
     res.redirect('http://34.214.68.82/arrows.png')
-  })
+})
 
-  app.get('/arrows_black.png', (req, res) => {
+app.get('/arrows_black.png', (req, res) => {
     res.redirect('http://34.214.68.82/arrows_black.png')
-  })
+})
 
 
-app.get('/graph/getStocks', (req,res) => {
+app.get('/graph/getStocks', (req, res) => {
     res.redirect('http://54.153.91.76/graph/getStocks');
 })
 
 app.get('/graph/img/:photo', (req, res) => {
     res.redirect(`http://54.153.91.76/graph/img/${path.basename(req.url)}`)
-  })
+})
 
-  app.post('/updateLineColors', (req, res) => {
+app.get('/navbar/img/:photo', (req, res) => {
+    res.redirect(`http://54.219.176.99/navbar/img/${path.basename(req.url)}`)
+})
+
+app.post('/updateLineColors', (req, res) => {
     res.end();
-  })
+})
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

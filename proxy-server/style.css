@@ -1,0 +1,19 @@
+#body {
+    margin: 70px;
+    margin-left: 130px
+}
+
+#Navbar {
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 8px;
+}
+
+#Tradestock {
+  position: sticky;
+  top: 100px;
+  float: right
+}
+
+
