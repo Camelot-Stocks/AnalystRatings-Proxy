@@ -1,41 +1,15 @@
-require('newrelic');
+const nr = require('newrelic');
 const express = require('express')
 const app = express()
+const proxy = require('http-proxy-middleware');
 const port = 3000;
 const path = require('path');
 const cors = require('cors');
 
 app.use('/', express.static(path.join(__dirname)));
 app.use(cors());
-
-app.get('/about/getData', (req, res) => {
-    var id = req.params.id || 1;
-    res.redirect(`http://13.52.245.200/about/getData/?id=${id}`);
-})
-
-app.get('/ratings/getData', (req, res) => {
-    var id = req.params.id || 1;
-    res.redirect(`http://54.153.72.27/ratings/getData/?id=${id}`);
-})
-
-app.get('/ratings/:photo', (req, res) => {
-    res.redirect(`http://54.153.72.27${req.url}`)
-})
-
-
-app.get('/earnings/getData', (req, res) => {
-    res.redirect('http://54.67.103.66/earnings/getData');
-})
-
-app.get('/news/getData', (req, res) => {
-    res.redirect('http://54.193.67.89/news/getData');
-})
-
-
-app.get('/tradestock/api', (req, res) => {
-    var id = req.params.id || 1;
-    res.redirect(`http://34.214.68.82/tradestock/api/?id=${id}`);
-});
+app.use('/ratings/getData/:id',
+proxy({target: 'http://54.183.184.85:3005/', changeOrigin: true}))
 
 app.get('/questionMark.png', (req, res) => {
     res.redirect('http://34.214.68.82/questionMark.png')
